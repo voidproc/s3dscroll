@@ -1,2 +1,8 @@
 # s3dscroll
-第五回 Siv3D Game Jam 投稿作品
+Siv3D Game Jam 第五回 テーマ「スクロールバーを実装する」の投稿作品です．
+
+## 製作者
+<https://twitter.com/voidproc>
+
+## スクリーンショット
+![ss1](https://raw.githubusercontent.com/voidproc/s3dscroll/master/screenshot1.jpg)
