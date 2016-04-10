@@ -8,7 +8,6 @@ void Main()
 
     TextureAsset::Register(L"earth", L"Assets/Earth.jpg");
 
-    // スクロールバー作成
     Size wnd_size, wnd_size_prev;
     const int bar_width = 16;
 
@@ -18,6 +17,8 @@ void Main()
 	while (System::Update())
 	{
         wnd_size = Window::Size();
+
+        // ウィンドウがリサイズされたらスクロールバーを作成しなおす
         if (wnd_size != wnd_size_prev) {
             const Rect vbar_rect(wnd_size.x - bar_width, 0, bar_width, wnd_size.y - bar_width);
             const Rect hbar_rect(0, wnd_size.y - bar_width, wnd_size.x - bar_width, bar_width);
