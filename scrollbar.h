@@ -3,6 +3,8 @@
 class ScrollBar
 {
 public:
+    ScrollBar() {}
+
     // size      : スクロールされる対象のサイズ
     // view_size : 描画領域のサイズ
     // rect      : スクロールバーを描画する領域
@@ -36,6 +38,7 @@ protected:
 class VScrollBar : public ScrollBar
 {
 public:
+    VScrollBar() {}
     VScrollBar(const int size, const int view_size, const Rect& rect);
 
     virtual void draw(const Color& c) const;
@@ -47,6 +50,7 @@ private:
 class HScrollBar : public ScrollBar
 {
 public:
+    HScrollBar() {}
     HScrollBar(const int size, const int view_size, const Rect& rect);
 
     virtual void draw(const Color& c) const;
