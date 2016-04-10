@@ -22,7 +22,7 @@ void Main()
         hscrollbar.scrollIfMouseDown();
 
         const int a_max = 200;
-        vscrollbar.draw(Clamp(a_max - (640 - bar_width - Mouse::Pos().x), 0, a_max));
-        hscrollbar.draw(Clamp(a_max - (480 - bar_width - Mouse::Pos().y), 0, a_max));
+        vscrollbar.draw(Color(96, 168, 255, Clamp(a_max - (640 - bar_width - Mouse::Pos().x), 0, a_max)));
+        hscrollbar.draw(Color(96, 168, 255, Clamp(a_max - (480 - bar_width - Mouse::Pos().y), 0, a_max)));
     }
 }

@@ -18,7 +18,7 @@ public:
     const int value() const { return scroll_; }
 
     // 描画
-    virtual void draw(uint32 alpha = 255U) const = 0;
+    virtual void draw(const Color& c) const = 0;
 
 private:
     virtual void scrollByMousePosImpl() = 0;
@@ -38,11 +38,10 @@ class VScrollBar : public ScrollBar
 public:
     VScrollBar(const int size, const int view_size, const Rect& rect);
 
-    virtual void draw(uint32 alpha = 255U) const;
+    virtual void draw(const Color& c) const;
 
 private:
     virtual void scrollByMousePosImpl() override;
-
 };
 
 class HScrollBar : public ScrollBar
@@ -50,7 +49,7 @@ class HScrollBar : public ScrollBar
 public:
     HScrollBar(const int size, const int view_size, const Rect& rect);
 
-    virtual void draw(uint32 alpha = 255U) const;
+    virtual void draw(const Color& c) const;
 
 private:
     virtual void scrollByMousePosImpl() override;
